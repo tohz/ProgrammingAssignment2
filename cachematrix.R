@@ -7,8 +7,8 @@
 # retrieve the inverse from the cache.
 #
 # Example:
-# > A = matrix(c(2, 1, 0, 0, 3, 0, 2, 2, 1, 3, -3, 3, 5, 1, 2, 1), nrow=4, ncol=4)
-# > m = makeCacheMatrix(A)
+# > A <- matrix(c(2, 1, 0, 0, 3, 0, 2, 2, 1, 3, -3, 3, 5, 1, 2, 1), nrow = 4, ncol = 4)
+# > m <- makeCacheMatrix(A)
 # > cacheSolve(m)
 # [,1] [,2] [,3] [,4]
 # [1,]   18  -35  -28    1
@@ -22,7 +22,7 @@
 # [2,]    9  -18  -14    1
 # [3,]   -2    4    3    0
 # [4,]  -12   24   19   -1
-# > B = cacheSolve(m)
+# > B <- cacheSolve(m)
 # getting cached data
 # > B %*% A
 # [,1] [,2] [,3] [,4]
